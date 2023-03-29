@@ -52,11 +52,8 @@ def main(input_file_name, output_file_name, api_endpoint, headers={}, params={})
 if __name__ == "__main__":
     input_file_name = "input.txt"
     output_file_name = "output.csv"
-    api_endpoint = "https://api-test.zonos.com/v1/landed_cost"
-    headers = {
-        "serviceToken": os.environ["DUTYTAX_TEST_KEY"],
-        "zonos-version": "2019-11-21",
-        "Content-type": "application/json",
-    }
-    df = main(input_file_name, output_file_name, api_endpoint, headers)
+    api_endpoint = "your endpoint here"
+    headers = {"your headers: here"}
+    params = {"your params: here"}
+    df = main(input_file_name, output_file_name, api_endpoint, headers, params)
     print(df)
